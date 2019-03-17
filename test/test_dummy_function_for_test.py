@@ -1,8 +1,8 @@
 from unittest import TestCase
-from heihei import dummy_function_for_test
+from .context import good_stuff
 
 
 class TestDummyFunctionForTest(TestCase):
     def test_dummy_function_for_test(self):
-        test_result = dummy_function_for_test()
+        test_result = good_stuff.dummy_function_for_test()
         self.assertTrue(test_result)
