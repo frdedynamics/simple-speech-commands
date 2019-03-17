@@ -9,6 +9,7 @@ def dummy_function_for_test():
 
 
 def two_plus_two():
+    # This is a comment
     return 4
 
 
