@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/frdedynamics/simple-speech-commands.svg?branch=master)](https://travis-ci.org/frdedynamics/simple-speech-commands)
 # simple-speech-commands
 example using speech recognition
 
