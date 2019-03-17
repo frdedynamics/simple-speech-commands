@@ -7,3 +7,5 @@ class TestDummyFunctionForTest(TestCase):
         test_result = good_stuff.dummy_function_for_test()
         self.assertTrue(test_result)
         self.assertTrue(False)
+        self.assertTrue(False)
+
