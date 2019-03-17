@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/frdedynamics/simple-speech-commands.svg?branch=master)](https://travis-ci.org/frdedynamics/simple-speech-commands)
+
+[![Coverage Status](https://coveralls.io/repos/github/frdedynamics/simple-speech-commands/badge.svg?branch=master)](https://coveralls.io/github/frdedynamics/simple-speech-commands?branch=master)
+
 # simple-speech-commands
 example using speech recognition
 
