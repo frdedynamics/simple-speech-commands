@@ -4,7 +4,7 @@ dist: xenial
 notifications:
   slack:
     rooms:
-      secure: $SLACK_KEY
+      secure: "$SLACK_KEY"
     on_success: always
     on_failure: always
 
@@ -23,4 +23,5 @@ install:
 
 # command to run tests
 script:
+  - echo "$SLACK_KEY"
   - pytest
