@@ -1,6 +1,10 @@
 language: python
 dist: xenial
 
+notifications:
+  slack: frdedynamics:F7RUpyamv7q8Tab3m93chuUi
+    on_success: change
+    on_failure: always
 
 matrix:
   include:
