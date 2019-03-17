@@ -8,6 +8,10 @@ def dummy_function_for_test():
     return True
 
 
+def two_plus_two():
+    return 4
+
+
 def local_test():
     with sr.Microphone() as source:
         recording.adjust_for_ambient_noise(source)

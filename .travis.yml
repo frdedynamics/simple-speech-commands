@@ -23,5 +23,8 @@ install:
 
 # command to run tests
 script:
-  - pytest
+  - pytest --cov=good_stuff --cov=test
   - flake8 . --exit-zero # Exit with status code "0" even if there are errors.
+
+after_success:
+  - coveralls
