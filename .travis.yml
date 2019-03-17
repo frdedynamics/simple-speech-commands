@@ -2,7 +2,9 @@ language: python
 dist: xenial
 
 notifications:
-  slack: frdedynamics:F7RUpyamv7q8Tab3m93chuUi
+  slack:
+    rooms:
+      - frdedynamics:F7RUpyamv7q8Tab3m93chuUi#travis
     on_success: change
     on_failure: always
 
