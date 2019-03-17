@@ -1,11 +1,14 @@
 language: python
 dist: xenial
 
+env:
+  global:
+    secure: OxbtclbG8VHxFLXxSI2fRJSy9VqjiSwoOr/6Q1WjvX5xU7s5gN77oeVl7XEPtPXI+Vg7Ch7ZHk/snCSrt2Sz8Dh1nXGYm/JBTOyO9C+vBaDLPXpt3MH/1gDlujgw1soMS9K6g6db7oRehEgGlw+uZz1w5monssjpNe5r/F7N+CkAvTGaYt7Z+DgJwn0Oge6M7gGB91xYrbcMLRD/T9KyrfyllPMfxUEE2cBiI1j7WJo+4L8FKlfgP2FQarHRzmGLRe0M2qnaJBw0S7+19gUqnxc9Suezg/xfPP/PLyHmpY5t1FIXFKAxPASwFjXdcRGv+bTmPu3nc6ddmCKbJttIA6cjzfvWtpAblqQPnU5YTjA4O8bWOayIIe7desaEFoPcVpcLw4hfiF0TZg2WLOmwxho4Vky38bqty29m1AfeQC7UdG2qTy/8RCdsA+VgGty5cTel9h/ahRkOfrs7elqIWLE7sB74oNR+QrEh9pEyrdA/NV7TMubzkrJi5/p9a82DwC9EAW71kYfySgtyyfYc0uJf9zFPYOHc53TXhmTlp2RdB6FyC44z2FrVaRYuX/2V+UVAOA9T6IyAY9H6yzp59xxbwXqq7A9IKqu4jOOfCW1JLug5X5xpuEV5GopgLJSDZEc4RUP4UUjWcA7Lm+EKRTI9qSqUdDzbEA9zQxYdBdQ=
 
 notifications:
   slack:
     rooms:
-      - secure: "RGDm9gfgl0JIGONlPiKw+MeNo7dX42CiHGVtCB+6JrViY/cOGaTzAflybf2S0Mhmm2CekHhiIkOLVrIeYeaHiHGl5XT9b5fLvpTz/gsrRsJVtyRW0RwP7iyTWhaBmPcxCwIj8GJJ5jERhC+hQ8hx/FtbK2rNPVht+XXRGS8d6l6fIYqJFAXHGaVaNSPKkhu3VX/PUR9aVqAPBL/4bfxi2VfbYrBr/drI1KIr4kJHLJhmxc53hZxTidV/azviHYzSOrUG/xlHvfmmWw5A3Zu8dnkVSibzN6uCmdTRxGLSSnfXNF2MGhz+1EVCDpo1zxny8cQhcmcs6I7PDgarEL+kk3MaJeBbimLodXTWOn/lfLxPJGu3qw5LYolHp4rZ6IXl8PS+Kp3tT6u9seCZFjXO43t6J60i6ovKXBAZc+YSwmVFITeBMYLn+xiEQZn1cJYOo4oq0Mh3cfPg+MORZsICE5bPz5eB5H64eVsR5TwxsJ0JIuTGafWR5pvK14aeOK19rgOFt8WXGLbdx6XPSryNHUmAmcwmv1kZucGOARRd5DeUhx8xZzUzeCPN1pkFJf4e5513rrfDFIG8hYdyzYQKU400rggwwouxsklUEpqx6yRqQR6weCsPwcQfbCWw6vkSgSWKvB0l1gHnl1QDG8IsB4zHwbSHFwF9ym7xOTvIhyo="
+      - SLACK_KEY
     on_success: always
     on_failure: always
 
@@ -24,4 +27,5 @@ install:
 
 # command to run tests
 script:
+  - echo SLACK_KEY
   - pytest
