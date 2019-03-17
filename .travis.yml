@@ -24,4 +24,6 @@ install:
 # command to run tests
 script:
   - echo SLACK_KEY
+  - echo $SLACK_KEY
+  - echo ${SLACK_KEY}
   - pytest
