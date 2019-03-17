@@ -4,7 +4,7 @@ dist: xenial
 notifications:
   slack:
     rooms:
-      - frdedynamics:F7RUpyamv7q8Tab3m93chuUi#travis
+      - $SLACK_KEY
     on_success: change
     on_failure: always
 
