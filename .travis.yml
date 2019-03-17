@@ -1,10 +1,11 @@
 language: python
 dist: xenial
 
+
 notifications:
   slack:
     rooms:
-      secure: "$SLACK_KEY"
+      secure: "RGDm9gfgl0JIGONlPiKw+MeNo7dX42CiHGVtCB+6JrViY/cOGaTzAflybf2S0Mhmm2CekHhiIkOLVrIeYeaHiHGl5XT9b5fLvpTz/gsrRsJVtyRW0RwP7iyTWhaBmPcxCwIj8GJJ5jERhC+hQ8hx/FtbK2rNPVht+XXRGS8d6l6fIYqJFAXHGaVaNSPKkhu3VX/PUR9aVqAPBL/4bfxi2VfbYrBr/drI1KIr4kJHLJhmxc53hZxTidV/azviHYzSOrUG/xlHvfmmWw5A3Zu8dnkVSibzN6uCmdTRxGLSSnfXNF2MGhz+1EVCDpo1zxny8cQhcmcs6I7PDgarEL+kk3MaJeBbimLodXTWOn/lfLxPJGu3qw5LYolHp4rZ6IXl8PS+Kp3tT6u9seCZFjXO43t6J60i6ovKXBAZc+YSwmVFITeBMYLn+xiEQZn1cJYOo4oq0Mh3cfPg+MORZsICE5bPz5eB5H64eVsR5TwxsJ0JIuTGafWR5pvK14aeOK19rgOFt8WXGLbdx6XPSryNHUmAmcwmv1kZucGOARRd5DeUhx8xZzUzeCPN1pkFJf4e5513rrfDFIG8hYdyzYQKU400rggwwouxsklUEpqx6yRqQR6weCsPwcQfbCWw6vkSgSWKvB0l1gHnl1QDG8IsB4zHwbSHFwF9ym7xOTvIhyo="
     on_success: always
     on_failure: always
 
@@ -23,5 +24,4 @@ install:
 
 # command to run tests
 script:
-  - echo "$SLACK_KEY"
   - pytest
