@@ -4,6 +4,7 @@ recording = sr.Recognizer()
 
 
 def dummy_function_for_test():
+    # Dummy returning True
     return True
 
 
