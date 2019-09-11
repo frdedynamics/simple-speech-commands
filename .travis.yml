@@ -4,7 +4,7 @@ dist: xenial
 notifications:
   slack:
     rooms:
-      secure: "je6rRQP4U0Ka86GfIvF3YIaR41UmLpqvFk04Sgb2X3bvwe5mTBcH7DHOBihtnIBHea6//TH04FOJbI9ulmLC0BjBEjCLLofIcYoHytIVFYGMva/YQwopLaDbW+clvxxft2k5SD78PG9wDOL2fDkycx7t0AgfUsDTh1BSNq2Hsq6suDpALX1vBLvixhDJ0kB/W7BL53wXP+KAK+SChbgu07SUYxgyQRGJNwB8OveaI9kypRdS3VwPXSwq+yCAJ//UePubmoMpAl9c33EX/wVpI/ufJgB/zYokFcA/ZOrHE/Vmdu0cm1g/Z3CWQwkka1A24z4ff0sa7paVocnB9my6hWIWP2YgUEqOLKrq93vM3Rd36nvblmkeTO4iCipTH6CDDEpG04Q/U/G9csUau7BxnTNc9F+AJmThzVIc4RDJsoWiXQdFxKL1VBc7gqNPiRWR6vpGePJtmdlltzH7w4ruIlYLMOWEtBp8iLTjlwdWnqeh0IUxOIJxnHOQh2B/tCgv9BgIy9Q4HNZkExDskx/yug0lUsyZneFDcYuMxfM58ic66hL4mlKtVkxnlMJDYW6u7Cdc87leyhYhjlQdK1Xh8ek6Mv9o9FKj/iKq5sLEybljbRll96x0YCquShwvPzv79k01d/sKsu6sZHemJruWJ33+/v1kZ6EvSfTOxOaRXgw="
+      secure: $slack_not
     on_success: change
     on_failure: always
 
