@@ -2,7 +2,7 @@ language: python
 dist: xenial
 
 notifications:
-  slack: frdedynamics:qH1coE6WbYjOcKGOOGSVxEHG
+  slack: $SLACK_NOT
   on_success: change
   on_failure: always
 
