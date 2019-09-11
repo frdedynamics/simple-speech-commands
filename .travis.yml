@@ -3,8 +3,8 @@ dist: xenial
 
 notifications:
   slack: frdedynamics:qH1coE6WbYjOcKGOOGSVxEHG
-    on_success: change
-    on_failure: always
+  on_success: change
+  on_failure: always
 
 matrix:
   include:
